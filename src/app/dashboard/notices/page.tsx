@@ -56,7 +56,7 @@ export default function NoticesPage() {
             onClick={handleRelogin}
             className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 font-bold"
           >
-            Re-Login as Admin
+           Login as Admin
           </button>
         </div>
         
@@ -69,7 +69,7 @@ export default function NoticesPage() {
           <Link
             href="/dashboard/notices/create"
             className="px-8 py-3 bg-red-600 text-white rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 inline-block font-bold text-xl shadow-xl animate-pulse border-2 border-yellow-400 mb-4"
-            aria-label="Create Notice"
+            aria-label="Create Notice!"
           >
             + CREATE NOTICE
           </Link>
@@ -166,7 +166,7 @@ export default function NoticesPage() {
         </div>
       ) : notices.length === 0 ? (
         <div className="bg-white shadow p-6 text-center rounded-md">
-          No notices found.
+          No notices found. Create One to See Notices
         </div>
       ) : (
         <div className="space-y-6">
