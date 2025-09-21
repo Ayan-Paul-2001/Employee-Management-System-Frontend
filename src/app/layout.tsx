@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Employee Management System',
-  description: 'A comprehensive system for managing employees, attendance, leave requests, and notices',
+  description: 'A comprehensive system for managing employees & Their  data',
 };
 
 export default function RootLayout({

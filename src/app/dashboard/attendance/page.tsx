@@ -287,10 +287,7 @@ export default function AttendancePage() {
           </DialogHeader>
           <div className="py-4">
             <Textarea
-              placeholder="Add notes (optional)"
-              value={notes}
-              onChange={(e) => setNotes(e.target.value)}
-              className="w-full"
+              
             />
           </div>
           <DialogFooter>

@@ -6,7 +6,7 @@ export default function Home() {
       <div className="z-10 max-w-5xl w-full items-center justify-center font-mono text-sm lg:flex">
         <div className="flex flex-col items-center justify-center">
           <h1 className="text-4xl font-bold mb-6 text-center">Employee Management System</h1>
-          <p className="text-xl mb-8 text-center">A comprehensive system for managing employees, attendance, leave requests, and notices</p>
+          <p className="text-xl mb-8 text-center">A comprehensive system for managing employees & Their Data</p>
           
           <div className="flex gap-4">
             <Link href="/login" className="btn btn-primary">

@@ -15,7 +15,7 @@ export function useLeaves(employeeId?: string | number) {
       const data = await leaveService.getAll();
       setLeaves(data);
     } catch (err) {
-      setError('Failed to fetch leave requests');
+      setError('Failed to get all leave requests');
       console.error(err);
     } finally {
       setLoading(false);
