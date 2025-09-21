@@ -14,7 +14,7 @@ export default function EmployeesPage() {
   // Filter employees based on search term
 
   // Filter employees based on search term
-  const filteredEmployees = employees.filter(employee => {
+  const filteredEmployees = employees.filter((employee: { fullName: string; email: string; department: string; position: string; }) => {
     // Skip filtering if search term is empty
     if (!searchTerm) return true;
     
