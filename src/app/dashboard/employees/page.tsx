@@ -44,7 +44,7 @@ export default function EmployeesPage() {
         <input
           type="text"
           placeholder="Search employees..."
-          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+          className="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-primary-550 focus:border-primary-550"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
@@ -58,7 +58,7 @@ export default function EmployeesPage() {
             className="ml-2 underline" 
             onClick={() => fetchEmployees()}
           >
-            Try again
+             Failed! Try again
           </button>
         </div>
       )}
@@ -73,14 +73,14 @@ export default function EmployeesPage() {
         </div>
       ) : (
         <div className="bg-white shadow overflow-hidden sm:rounded-md">
-          <ul className="divide-y divide-gray-200">
+          <ul className="divide-y divide-gray-350">
             {filteredEmployees.map((employee) => (
               <li key={employee.id || `emp-${Math.random()}`}>
                 <div className="px-4 py-4 flex items-center sm:px-6">
                   <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
                     <div>
                       <div className="flex text-sm">
-                        <p className="font-medium text-primary-600 truncate">{employee.fullName || 'No Name'}</p>
+                        <p className="font-medium text-primary-400 truncate">{employee.fullName || 'No Name'}</p>
                         <p className="ml-1 flex-shrink-0 font-normal text-gray-500">
                           {employee.email || 'No Email'}
                         </p>
