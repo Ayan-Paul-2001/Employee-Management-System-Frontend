@@ -20,8 +20,8 @@ export async function GET(request: Request) {
     if (token === 'demo-token-12345') {
       return NextResponse.json({
         id: 1,
-        fullName: 'Admin User',
-        email: 'admin@example.com',
+        fullName: 'Demo User',
+        email: 'Demo@example.com',
         role: 'admin'
       });
     } else if (token === 'demo-token-67890') {
