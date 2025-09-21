@@ -72,7 +72,7 @@ export default function CreateNoticePage() {
         // Handle API error messages
         setError(err.response.data.message);
       } else {
-        setError('Failed to create notice. Please try again.');
+        setError('Failed to create notice. Please try again later.');
       }
     } finally {
       setLoading(false);
@@ -149,7 +149,7 @@ export default function CreateNoticePage() {
               disabled={loading}
               className="px-4 py-2 bg-primary-600 text-white rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {loading ? 'Creating...' : 'Create Notice'}
+              {loading ? 'Creating... Wait a while' : 'Create Notice'}
             </button>
           </div>
         </form>
